@@ -81,13 +81,17 @@
         color: #333;
         margin: 20px 0;
       }
-      /* تعديل تصميم البطاقات عند الشاشات الصغيرة */
-      @media (max-width: 768px) {
-        .card {
-        flex: 1 1 100%;
-        width: 80%;
-        }
-      }
+@media (max-width: 768px) {
+  .container-cards {
+    flex-direction: column; /* جعل العناصر تتراكم عموديًا */
+    align-items: center; /* توسيط العناصر */
+  }
+
+  .card {
+    flex: 1 1 100%; /* جعل العرض 100% */
+    max-width: 90%; /* تقليل العرض قليلاً ليبقى متناسق */
+  }
+}
     </style>
   </head>
   <body>

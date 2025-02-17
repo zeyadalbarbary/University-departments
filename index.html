@@ -46,15 +46,21 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 15px
+        text-decoration: none; /* التأكد من إزالة التسطير */
       }
       .card:hover {
         transform: scale(1.05);
+        text-decoration: none; /* التأكد من إزالة التسطير */
       }
       .card img {
         width: 100%;
         height: auto;
         border-radius: 10px;
         background-color: #FFF6F1; /* تغيير لون الخلفية */
+      }
+
+      .card a:hover {
+        text-decoration: none !important; /* التأكد من عدم ظهوره أبدًا */
       }
       .card h6 {
         margin: 10px 0 0;
@@ -71,10 +77,9 @@
       .card a h6 {
         text-decoration: none; /* منع التسطير داخل الروابط */
       }
-      
-      a:visited, a:active, a:hover {
-        text-decoration: none; /* منع الخط السفلي في جميع الحالات */
-        color: inherit; /* إبقاء اللون كما هو دون تغيير */
+
+      .card:hover h6 {
+        text-decoration: none; /* التأكد من عدم ظهور التسطير عند التحويم */
       }
       .section-title {
         font-size: 2em;

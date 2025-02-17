@@ -2,7 +2,7 @@
 <html lang="ar">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" c>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اختار جامعتك
     </title>
     <style>
@@ -52,10 +52,18 @@
       .card h6 {
         margin: 10px 0 0;
         font-size: 2em;
-        text-decoration: none; /* منع الخط السفلي في جميع الحالات */
+        text-decoration: none; /* التأكد من إزالة التسطير */
         color: #333;
       }
 
+      .card a {
+        text-decoration: none; /* إزالة التسطير من الرابط */
+      }
+
+      .card a h6 {
+        text-decoration: none; /* منع التسطير داخل الروابط */
+      }
+      
       a:visited, a:active, a:hover {
         text-decoration: none; /* منع الخط السفلي في جميع الحالات */
         color: inherit; /* إبقاء اللون كما هو دون تغيير */

@@ -22,6 +22,15 @@
         text-align: center;
         background-color: #FFF6F1; /* تغيير لون الخلفية */
       }
+      a {
+        text-decoration: none !important; /* إزالة التسطير من جميع الروابط */
+        color: black; /* الاحتفاظ بنفس لون النص */
+      }
+
+        a:hover, a:focus, a:active {
+        text-decoration: none !important; /* التأكد من عدم ظهوره أبدًا */
+      }
+
       /* تخصيص فئة container للجزء الخاص بالبطاقات */
       .container-cards {
         display: flex;
